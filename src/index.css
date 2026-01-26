@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@layer components {
+  .btn-dark {
+    @apply px-7 py-3 rounded-lg text-sm sm:text-base
+           bg-gray-900 text-gray-200 border border-gray-800
+           hover:bg-white hover:text-black
+           transition-colors;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 18px; /* default is 16px */
+}
+
+body {
+  line-height: 1.6;
+  background-color: #000;
+  color: #fff;
+}
