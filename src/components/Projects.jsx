@@ -123,15 +123,16 @@ const projects = [
     tech: "React · Node.js · PostgreSQL",
   },
   {
-    title: "Local Business Store",
-    desc: "Built an online store with product catalog, order management, and delivery logic.",
-    tech: "React · Express · Payments",
+    title: "Approvify",
+    desc: "A freelance reviews and approvals platform that streamlines client feedback, revision tracking, and approval workflows for freelance projects.",
+    tech: "React · Node.js · MongoDB",
+    github: "https://github.com/ArghyaSantra/Approvify",
   },
   {
     title: "PLT Research Lab, Jaipur",
     desc: "Designed and developed the official website for PLT Research Lab, focusing on research communication, scalability, responsive design, and modern UI for a scientific organization.",
     tech: "React · Tailwind CSS · Vercel",
-    link: "https://plt-india.vercel.app/", // 🔴 replace with actual URL
+    link: "https://plt-india.vercel.app/",
   },
 ];
 
@@ -166,16 +167,29 @@ export default function Projects() {
                     {project.tech}
                   </span>
 
-                  {project.link && (
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs sm:text-sm text-blue-400 hover:text-blue-300 transition"
-                    >
-                      View Website →
-                    </a>
-                  )}
+                  <div className="flex gap-4">
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs sm:text-sm text-gray-300 hover:text-white transition"
+                      >
+                        GitHub →
+                      </a>
+                    )}
+
+                    {project.link && (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs sm:text-sm text-blue-400 hover:text-blue-300 transition"
+                      >
+                        View Website →
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             ))}
