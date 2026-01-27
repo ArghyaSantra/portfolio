@@ -128,9 +128,10 @@ const projects = [
     tech: "React · Express · Payments",
   },
   {
-    title: "Habit & Routine Builder",
-    desc: "Product-focused habit tracking app with visual progress and routine stacking.",
-    tech: "React · System Design",
+    title: "PLT Research Lab, Jaipur",
+    desc: "Designed and developed the official website for PLT Research Lab, focusing on research communication, scalability, responsive design, and modern UI for a scientific organization.",
+    tech: "React · Tailwind CSS · Vercel",
+    link: "https://plt-india.vercel.app/", // 🔴 replace with actual URL
   },
 ];
 
@@ -160,8 +161,21 @@ export default function Projects() {
                   </p>
                 </div>
 
-                <div className="mt-4 text-xs sm:text-sm text-gray-500">
-                  {project.tech}
+                <div className="mt-4 flex items-center justify-between gap-4">
+                  <span className="text-xs sm:text-sm text-gray-500">
+                    {project.tech}
+                  </span>
+
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs sm:text-sm text-blue-400 hover:text-blue-300 transition"
+                    >
+                      View Website →
+                    </a>
+                  )}
                 </div>
               </div>
             ))}
