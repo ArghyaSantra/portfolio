@@ -3,9 +3,10 @@ import projectsAnim from "../assets/project-launching.json";
 
 const projects = [
   {
-    title: "Expense Tracker System",
-    desc: "Designed a complete expense tracking system with users, transactions, and monthly analytics.",
-    tech: "React · Node.js · PostgreSQL",
+    title: "WhyNot — Social Event Hosting & Discovery Platform",
+    desc: "Built a full-stack platform where users can host real-world events and discover events hosted by others. Implemented authentication, event feeds, and secure backend APIs with a clean frontend UX.",
+    tech: "React · Vite · Tailwind CSS · Node.js · Express · MongoDB · Prisma · JWT",
+    github: "https://github.com/ArghyaSantra/WhyNot",
   },
   {
     title: "Approvify",
